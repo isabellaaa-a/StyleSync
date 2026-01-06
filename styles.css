@@ -49,9 +49,15 @@ body {
 }
 
 @keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .nav-links {
@@ -154,14 +160,20 @@ body {
     font-size: 0.9rem;
 }
 
-/* Main Content */
-.quick-actions, .todays-outfit, .challenges, .community-feed {
+/* Main Content Sections */
+.quick-actions,
+.todays-outfit,
+.challenges,
+.community-feed {
     max-width: 1200px;
     margin: 3rem auto;
     padding: 0 2rem;
 }
 
-.quick-actions h3, .todays-outfit h3, .challenges h3, .community-feed h3 {
+.quick-actions h3,
+.todays-outfit h3,
+.challenges h3,
+.community-feed h3 {
     text-align: center;
     font-size: 2rem;
     color: white;
@@ -191,10 +203,21 @@ body {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
-.action-card.purple { border-top: 4px solid #9b59b6; }
-.action-card.pink { border-top: 4px solid #e91e63; }
-.action-card.orange { border-top: 4px solid #ff9800; }
-.action-card.blue { border-top: 4px solid #2196f3; }
+.action-card.purple {
+    border-top: 4px solid #9b59b6;
+}
+
+.action-card.pink {
+    border-top: 4px solid #e91e63;
+}
+
+.action-card.orange {
+    border-top: 4px solid #ff9800;
+}
+
+.action-card.blue {
+    border-top: 4px solid #2196f3;
+}
 
 .action-icon {
     font-size: 3rem;
@@ -203,4 +226,321 @@ body {
 
 .action-card h4 {
     font-size: 1.3rem;
-    margin-bottom:
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.action-card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Today's Outfit Section */
+.outfit-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.outfit-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.placeholder-outfit {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 3rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.outfit-details h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.weather {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.outfit-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.item-tag {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.outfit-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.love-btn,
+.shuffle-btn,
+.share-btn {
+    background: white;
+    border: 2px solid #ddd;
+    padding: 0.8rem 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.love-btn:hover {
+    border-color: #ff6b6b;
+    color: #ff6b6b;
+}
+
+.shuffle-btn:hover {
+    border-color: #4ecdc4;
+    color: #4ecdc4;
+}
+
+.share-btn:hover {
+    border-color: #45b7d1;
+    color: #45b7d1;
+}
+
+/* Active Challenges */
+.challenge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.challenge-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.challenge-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.challenge-card.featured {
+    border: 2px solid #ff6b6b;
+    background: linear-gradient(135deg, #fff 0%, #fff5f5 100%);
+}
+
+.challenge-badge {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    background: linear-gradient(45deg, #ff6b6b, #ff4757);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.challenge-card h4 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.challenge-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.challenge-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.join-btn {
+    width: 100%;
+    background: linear-gradient(45deg, #4ecdc4, #44a08d);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.join-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Community Feed */
+.feed-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.feed-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feed-card:hover {
+    transform: translateY(-3px);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.avatar {
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    border-radius: 50%;
+}
+
+.user-info div strong {
+    display: block;
+    font-weight: 600;
+    color: #333;
+}
+
+.post-time {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.feed-card p {
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.post-stats {
+    display: flex;
+    gap: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.post-stats span {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.post-stats span:hover {
+    color: #ff6b6b;
+}
+
+/* Footer */
+.footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 3rem 0 1rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #4ecdc4;
+    font-weight: 600;
+}
+
+.footer-section p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li:hover {
+    color: #4ecdc4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .outfit-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .challenge-grid,
+    .feed-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .outfit-actions {
+        justify-content: center;
+    }
+}
