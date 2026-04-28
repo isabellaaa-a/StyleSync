@@ -7,8 +7,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #000080;
+    background: linear-gradient(135deg, #87ceeb 0%, #000080 100%);
     min-height: 100vh;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 .logo h1 {
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #f9ca24);
+    background: linear-gradient(45deg, #87ceeb, #4169e1, #000080, #b0e0e6);
     background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -44,7 +44,7 @@ body {
 
 .tagline {
     font-size: 0.8rem;
-    color: #666;
+    color: #000080;
     font-weight: 300;
 }
 
@@ -69,17 +69,17 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: #000080;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #ff6b6b;
+    color: #87ceeb;
 }
 
 .profile-btn {
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(45deg, #87ceeb, #000080);
     color: white !important;
     padding: 0.5rem 1rem;
     border-radius: 25px;
@@ -104,14 +104,14 @@ body {
 
 .hero-content h2 {
     font-size: 3rem;
-    color: white;
+    color: #000080;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 .hero-content p {
     font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(135, 206, 235, 0.9);
     margin-bottom: 2rem;
     max-width: 600px;
     margin-left: auto;
@@ -119,7 +119,7 @@ body {
 }
 
 .cta-button {
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(45deg, #87ceeb, #000080);
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -128,12 +128,12 @@ body {
     border-radius: 50px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+    box-shadow: 0 4px 15px rgba(135, 206, 235, 0.4);
 }
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+    box-shadow: 0 6px 20px rgba(135, 206, 235, 0.6);
 }
 
 .hero-stats {
@@ -152,11 +152,11 @@ body {
 .stat-number {
     font-size: 2rem;
     font-weight: 700;
-    color: #f9ca24;
+    color: #87ceeb;
 }
 
 .stat-label {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 128, 0.8);
     font-size: 0.9rem;
 }
 
@@ -176,7 +176,7 @@ body {
 .community-feed h3 {
     text-align: center;
     font-size: 2rem;
-    color: white;
+    color: #000080;
     margin-bottom: 2rem;
     font-weight: 600;
 }
@@ -204,19 +204,19 @@ body {
 }
 
 .action-card.purple {
-    border-top: 4px solid #9b59b6;
+    border-top: 4px solid #4169e1;
 }
 
 .action-card.pink {
-    border-top: 4px solid #e91e63;
+    border-top: 4px solid #87ceeb;
 }
 
 .action-card.orange {
-    border-top: 4px solid #ff9800;
+    border-top: 4px solid #000080;
 }
 
 .action-card.blue {
-    border-top: 4px solid #2196f3;
+    border-top: 4px solid #b0e0e6;
 }
 
 .action-icon {
@@ -227,12 +227,12 @@ body {
 .action-card h4 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: #000080;
     font-weight: 600;
 }
 
 .action-card p {
-    color: #666;
+    color: #4169e1;
     line-height: 1.5;
 }
 
@@ -260,7 +260,7 @@ body {
     flex-direction: column;
     gap: 1rem;
     font-size: 3rem;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #e0f6ff 0%, #b0e0e6 100%);
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
@@ -269,12 +269,12 @@ body {
 
 .outfit-details h4 {
     font-size: 1.5rem;
-    color: #333;
+    color: #000080;
     margin-bottom: 0.5rem;
 }
 
 .weather {
-    color: #666;
+    color: #4169e1;
     margin-bottom: 1.5rem;
     font-size: 1rem;
 }
@@ -287,7 +287,7 @@ body {
 }
 
 .item-tag {
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(45deg, #87ceeb, #000080);
     color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
@@ -314,18 +314,18 @@ body {
 }
 
 .love-btn:hover {
-    border-color: #ff6b6b;
-    color: #ff6b6b;
+    border-color: #87ceeb;
+    color: #87ceeb;
 }
 
 .shuffle-btn:hover {
-    border-color: #4ecdc4;
-    color: #4ecdc4;
+    border-color: #000080;
+    color: #000080;
 }
 
 .share-btn:hover {
-    border-color: #45b7d1;
-    color: #45b7d1;
+    border-color: #4169e1;
+    color: #4169e1;
 }
 
 /* Active Challenges */
@@ -351,15 +351,15 @@ body {
 }
 
 .challenge-card.featured {
-    border: 2px solid #ff6b6b;
-    background: linear-gradient(135deg, #fff 0%, #fff5f5 100%);
+    border: 2px solid #87ceeb;
+    background: linear-gradient(135deg, #fff 0%, #e0f6ff 100%);
 }
 
 .challenge-badge {
     position: absolute;
     top: -10px;
     right: 15px;
-    background: linear-gradient(45deg, #ff6b6b, #ff4757);
+    background: linear-gradient(45deg, #87ceeb, #000080);
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -369,13 +369,13 @@ body {
 
 .challenge-card h4 {
     font-size: 1.4rem;
-    color: #333;
+    color: #000080;
     margin-bottom: 1rem;
     font-weight: 600;
 }
 
 .challenge-card p {
-    color: #666;
+    color: #4169e1;
     margin-bottom: 1.5rem;
     line-height: 1.5;
 }
@@ -385,12 +385,12 @@ body {
     justify-content: space-between;
     margin-bottom: 1.5rem;
     font-size: 0.9rem;
-    color: #888;
+    color: #000080;
 }
 
 .join-btn {
     width: 100%;
-    background: linear-gradient(45deg, #4ecdc4, #44a08d);
+    background: linear-gradient(45deg, #87ceeb, #000080);
     color: white;
     border: none;
     padding: 1rem;
@@ -438,23 +438,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(45deg, #87ceeb, #000080);
     border-radius: 50%;
 }
 
 .user-info div strong {
     display: block;
     font-weight: 600;
-    color: #333;
+    color: #000080;
 }
 
 .post-time {
     font-size: 0.8rem;
-    color: #888;
+    color: #4169e1;
 }
 
 .feed-card p {
-    color: #555;
+    color: #000080;
     margin-bottom: 1.5rem;
     line-height: 1.5;
 }
@@ -463,7 +463,7 @@ body {
     display: flex;
     gap: 2rem;
     font-size: 0.9rem;
-    color: #666;
+    color: #4169e1;
 }
 
 .post-stats span {
@@ -472,12 +472,12 @@ body {
 }
 
 .post-stats span:hover {
-    color: #ff6b6b;
+    color: #87ceeb;
 }
 
 /* Footer */
 .footer {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 128, 0.8);
     color: white;
     padding: 3rem 0 1rem;
     margin-top: 4rem;
@@ -495,12 +495,12 @@ body {
 .footer-section h4 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    color: #4ecdc4;
+    color: #87ceeb;
     font-weight: 600;
 }
 
 .footer-section p {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(135, 206, 235, 0.8);
     line-height: 1.5;
 }
 
@@ -510,13 +510,13 @@ body {
 
 .footer-section ul li {
     margin-bottom: 0.5rem;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(176, 224, 230, 0.7);
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
 .footer-section ul li:hover {
-    color: #4ecdc4;
+    color: #87ceeb;
 }
 
 /* Responsive Design */
