@@ -14,18 +14,20 @@ body {
 
 /* Header */
 .header {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(18px);
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(135, 206, 235, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
     padding: 1rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -63,7 +65,7 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -71,23 +73,29 @@ body {
     text-decoration: none;
     color: #000080;
     font-weight: 500;
-    transition: color 0.3s ease;
+    padding: 0.5rem 0.8rem;
+    border-radius: 999px;
+    transition: all 0.25s ease;
 }
 
 .nav-links a:hover {
-    color: #87ceeb;
+    color: white;
+    background: rgba(135, 206, 235, 0.24);
 }
 
 .profile-btn {
     background: linear-gradient(45deg, #87ceeb, #000080);
     color: white !important;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    transition: transform 0.3s ease;
+    padding: 0.65rem 1.2rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 10px 20px rgba(135, 206, 235, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .profile-btn:hover {
     transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(135, 206, 235, 0.35);
     color: white !important;
 }
 
@@ -95,11 +103,11 @@ body {
 .hero {
     text-align: center;
     padding: 4rem 2rem;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(235, 245, 255, 0.16);
     backdrop-filter: blur(10px);
     margin: 2rem;
     border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 80, 0.12);
 }
 
 .hero-content h2 {
@@ -189,18 +197,18 @@ body {
 }
 
 .action-card {
-    background: white;
+    background: rgba(235, 245, 255, 0.95);
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 80, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
 .action-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 80, 0.16);
 }
 
 .action-card.purple {
@@ -244,10 +252,10 @@ body {
 }
 
 .outfit-card {
-    background: white;
+    background: rgba(235, 245, 255, 0.95);
     padding: 2rem;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 80, 0.12);
     display: flex;
     gap: 2rem;
     align-items: center;
@@ -304,8 +312,8 @@ body {
 .love-btn,
 .shuffle-btn,
 .share-btn {
-    background: white;
-    border: 2px solid #ddd;
+    background: rgba(235, 245, 255, 0.98);
+    border: 2px solid rgba(135, 206, 235, 0.4);
     padding: 0.8rem 1.2rem;
     border-radius: 25px;
     cursor: pointer;
@@ -337,22 +345,22 @@ body {
 }
 
 .challenge-card {
-    background: white;
+    background: rgba(235, 245, 255, 0.95);
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 80, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
 }
 
 .challenge-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 80, 0.16);
 }
 
 .challenge-card.featured {
     border: 2px solid #87ceeb;
-    background: linear-gradient(135deg, #fff 0%, #e0f6ff 100%);
+    background: linear-gradient(135deg, #eef8ff 0%, #d6edff 100%);
 }
 
 .challenge-badge {
@@ -413,10 +421,10 @@ body {
 }
 
 .feed-card {
-    background: white;
+    background: rgba(235, 245, 255, 0.95);
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 80, 0.08);
     transition: transform 0.3s ease;
 }
 
@@ -544,3 +552,504 @@ body {
         justify-content: center;
     }
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0b2248 0%, #88c5f5 100%);
+    min-height: 100vh;
+    color: #000080;
+}
+
+/* Header Styles */
+.header {
+    background: rgba(235, 245, 255, 0.92);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(0, 0, 64, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(135, 206, 235, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.logo h1 {
+    background: linear-gradient(45deg, #87ceeb, #000080);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.tagline {
+    font-size: 0.8rem;
+    color: #4169e1;
+    margin-top: -5px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+}
+ a {
+    text-decoration: none;
+    color: #000080;
+    font-weight: 500;
+    padding: 0.5rem 0.8rem;
+    border-radius: 999px;
+    transition: all 0.25s ease;
+}
+
+ a:hover {
+    color: white;
+    background: rgba(135, 206, 235, 0.25);
+}
+
+.profile-btn {
+    background: linear-gradient(45deg, #87ceeb, #000080);
+    color: white !important;
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 10px 20px rgba(135, 206, 235, 0.25);
+}
+
+.profile-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 24px rgba(135, 206, 235, 0.35);
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-container {
+    background: rgba(235, 245, 255, 0.88);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 10px 40px rgba(0, 0, 64, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgba(135, 206, 235, 0.25);
+}
+
+.profile-picture img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #87ceeb;
+    box-shadow: 0 5px 20px rgba(135, 206, 235, 0.3);
+}
+
+.profile-info {
+    margin-left: 2rem;
+}
+
+.profile-info h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #87ceeb, #000080);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.profile-info p {
+    color: #4169e1;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(135, 206, 235, 0.12), rgba(0, 0, 128, 0.08));
+    border-radius: 15px;
+    border: 1px solid rgba(135, 206, 235, 0.3);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #87ceeb, #000080);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.stat p {
+    color: #4169e1;
+    font-weight: 500;
+}
+
+.profile-content {
+    margin-top: 2rem;
+}
+
+.about-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(135, 206, 235, 0.08);
+    border-radius: 15px;
+    border-left: 4px solid #87ceeb;
+}
+
+.about-section h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000080;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    color: #4169e1;
+    line-height: 1.6;
+}
+
+.recent-outfits h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000080;
+    margin-bottom: 1rem;
+}
+
+.outfit-grid {
+    display: flex;
+    gap: 1rem;
+}
+
+.outfit-card {
+    background: linear-gradient(135deg, #87ceeb, #000080);
+    color: white;
+    padding: 2rem 1rem;
+    border-radius: 15px;
+    text-align: center;
+    flex: 1;
+    font-weight: 600;
+    box-shadow: 0 5px 20px rgba(135, 206, 235, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.outfit-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Challenge Page Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.challenge-hero {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.challenge-hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+}
+
+.challenge-hero p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.challenge-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.challenge-stats .stat {
+    text-align: center;
+}
+
+.challenge-stats .stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.challenge-stats .stat-label {
+    color: #666;
+    font-weight: 500;
+}
+
+.featured-challenge {
+    padding: 3rem 0;
+}
+
+.featured-challenge h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.featured-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border: 2px solid #667eea;
+}
+
+.challenge-badge {
+    position: absolute;
+    top: -10px;
+    left: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+.challenge-badge.trending {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+}
+
+.featured-card h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.featured-card p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.challenge-details {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.detail {
+    color: #666;
+}
+
+.join-btn {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.join-btn:hover {
+    transform: translateY(-2px);
+}
+
+.join-btn.featured {
+    padding: 1.2rem 3rem;
+    font-size: 1.1rem;
+}
+
+.active-challenges {
+    padding: 3rem 0;
+}
+
+.active-challenges h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.challenge-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.challenge-card:hover {
+    transform: translateY(-5px);
+}
+
+.challenge-badge.weekly { background: #3b82f6; }
+.challenge-badge.daily { background: #10b981; }
+.challenge-badge.seasonal { background: #f59e0b; }
+.challenge-badge.community { background: #8b5cf6; }
+.challenge-badge.beginner { background: #06b6d4; }
+.challenge-badge.advanced { background: #ef4444; }
+
+.challenge-card h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.challenge-card p {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.challenge-info {
+    margin-bottom: 1.5rem;
+}
+
+.challenge-info div {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.my-challenges {
+    
+/* Community Page Styles */
+.community-hero {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.community-hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+}
+
+.community-hero p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.create-post-btn {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.create
+
+/* Dupes Page Styles */
+.dupes-hero {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.dupes-hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+}
+
+.dupes-hero p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-bar {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: 2px solid rgba(102, 126, 234, 0.3);
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+}
+
+
